@@ -1,0 +1,552 @@
+body {
+    margin: 0;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    color: #ccc;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.fixed-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #353234;
+    height: 120px;
+    align-items: center;    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+a:hover{
+    color:#fff ;
+}
+
+.wrapper{
+    margin:auto;
+    width: auto;
+    background-color: #fff;
+}
+
+.menu {
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+}
+
+.menu a{
+    margin-left: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+/* DROPDOWN */
+/* TICKET */
+
+.ticket {
+    display: inline-block;
+    position: relative;
+}
+
+.ticket a {
+    display: flex;
+    align-items: center;
+}
+
+.dropTicket {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px 5px 0px;
+    width: 110px;
+    transform: scaleY(0);
+    transition: transform 200ms;
+    transform-origin: top;
+    margin-left: 20px;
+}
+
+.ticket:hover .dropTicket {
+    transform: scaleY(1);
+    display: flex;
+    flex-direction: column;
+}
+
+.dropTicket a {
+    line-height: 20px;
+    display: block;
+    margin: 3px;
+    color: #313131;
+    padding: 0 5px;
+    position: relative;
+}
+
+.dropTicket a:hover{
+    color: #000;
+    background-color: rgb(221, 253, 248);
+}
+
+/* PROMOTION */
+
+.promotion {
+    display: inline-block;
+    position: relative;
+}
+
+.promotion a {
+    display: flex;
+    align-items: center;
+}
+
+.dropPromotion {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px 5px 0px;
+    width: 110px;
+    transform: scaleY(0);
+    transition: transform 200ms;
+    transform-origin: top;
+    margin-left: 30px;
+}
+
+.promotion:hover .dropPromotion {
+    transform: scaleY(1);
+    display: flex;
+    flex-direction: column;
+}
+
+.dropPromotion a {
+    line-height: 20px;
+    display: block;
+    margin: 3px;
+    color: #313131;
+    padding: 0 5px;
+    position: relative;
+}
+
+.dropPromotion a:hover{
+    color: #000;
+    background-color: rgb(221, 253, 248);
+}
+
+/*-----------*/
+
+.extra {
+    margin-right: 30px;
+}
+
+.extra a {
+    border: 2px solid #cbc;
+    border-radius: 20px;
+}
+
+
+/* ====== MAIN ====== */
+
+.content1{
+    display: flex;
+    justify-content: center;
+      background-color: rgb(255, 158, 102);
+    width:100%;
+}
+
+.content2{
+    display: flex;
+    justify-content: center;
+    
+    width:100%;
+}
+
+.home-bestseller{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.posters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;    
+}
+
+.poster1{
+    margin-right: 100px;
+    
+}
+
+.poster1:hover img{
+    transform: scale(1.1);
+}
+
+.poster2:hover img{
+    transform: scale(1.1);
+}
+
+.poster3:hover img{
+    transform: scale(1.1);
+}
+
+.poster2{
+    margin-right: 100px;
+}
+
+.posters img{
+    width: 320px;
+    height: 450px;
+    border-radius: 3%;
+    transition: ease .3s;
+}
+
+.home-recommendation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+
+
+.poster-recommend{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;    
+    gap: 40px;
+}
+
+
+.poster-recommend img{
+    
+    transition: ease .3s;
+    
+}
+
+
+.rec1{
+    
+    transition: ease .3s;
+   
+}
+
+
+
+.rec1:hover img{
+    transform: scale(1.1);
+}   
+
+.rec2{
+    
+    transition: ease .3s;
+    
+}
+
+.rec2:hover img{
+    transform: scale(1.1);
+}
+
+.rec3{
+    
+    transition: ease .3s;
+    
+}
+
+.rec3:hover img{
+    transform: scale(1.1);
+}
+
+.rec4{
+    
+    transition: ease .3s;
+   
+}
+
+.rec4:hover img{
+    transform: scale(1.1);
+}
+
+.poster-recommend img{
+    width: 250px;
+    height: 350px;
+    border-radius: 3%;
+}
+
+.home-bestseller p{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.poster-recommend p{
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.home-bestseller h2{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.home-recommendation h2{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* =CAROUSEL= */
+
+.arrow-left img{
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    width: 50px;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.arrow-left :hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.arrow-right img{
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+    width: 50px;
+    position: absolute;
+    margin-left: -100px;
+}
+
+.arrow-right :hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.carousel-image-container img{
+    width: 100%;
+    margin-top: 120px;
+}
+
+.slider-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slogan{
+    margin: 150px;
+    display: flex;
+}
+
+.left{
+    width: 70%;
+    font-weight: bold;
+    font-size: 56px;
+}
+
+.right{
+    width: 30%;
+    text-align: justify;
+    margin-left: 50px;
+    font-weight: bold;
+    font-family: 12px;
+}
+
+.slogan-right-bottom a{
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #353234;
+    border: solid black 1px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+.slogan-right-bottom a:hover{
+    background-color: #353234;
+    color: white;
+    border: none
+}
+
+.slogan-right-bottom{
+    margin-top: 50px;
+    
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #313131;
+    color: white;
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.footer-logo img{
+    width: 100px;
+}
+
+.sosmed img{
+    width: 20px;
+    height: 20px;
+}
+
+.sosmed{
+    display: flex;
+    gap: 10px;
+}
+
+.footer2{
+    margin-left: 60px;
+}
+
+.contactAtas{
+    display: flex;
+    align-items: center;
+}
+
+.contactBawah{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contactAtas h4{
+    margin-right: 30px;
+}
+
+.contactBawah p{
+    margin-bottom: 0px;
+}
+
+.conIsi1{
+    margin-top: 0px;
+}
+
+.downloadBawah img{
+    width: 120px;
+}
+
+.footer3{
+    margin-left: 70px;
+}
+
+@media screen and (max-width: 800px) {
+
+    /* HEADER */
+    .menu {
+        padding-left: 0;
+        justify-content: center;
+        flex-direction: column;
+      }
+      
+      .menu a {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      
+      .extra {
+        margin-right: 0;
+        margin-top: 20px;
+        
+      }
+
+      .fixed-navbar{
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        position: relative;
+      }
+      .dropTicket{
+        margin-left: -10px;
+        padding-right: 5px;
+        z-index: 99999;
+        text-align: center;
+        
+      }
+
+      .dropPromotion{
+       margin-left: 5px;
+       padding-right: 10px;
+      }
+
+      .dropTicket a{
+        justify-content:center ;
+        z-index: 9999;
+      }
+
+      .dropPromotion a{
+        text-align: center;
+        
+      }
+
+      header{
+        height: fit-content;
+      }
+
+    /* CONTENT */
+    
+    .slider-carousel{
+        width: inherit;
+    }
+
+    .posters{
+        flex-direction: column;
+    }
+    .poster1,.poster2,.poster3,.poster4{
+        margin: 0px;
+    }
+
+    .poster-recommend{
+        flex-direction: column;
+    }
+    .slogan{
+        flex-direction: column;
+    }
+
+    .left,.right{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+
+    .slogan-right-bottom{
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .carousel-image-container img{
+        width: 100%;
+        margin-top: 0px;
+    }
+    /* FOOTER */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer1{
+        margin-top: 10px;
+    }
+}

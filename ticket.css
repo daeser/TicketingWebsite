@@ -1,0 +1,505 @@
+section {
+    padding: 100px 0;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  
+  h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    background-color:  #3F4E4F;
+
+    /* background-image: url(img/AS.jpg); */
+    background-size: cover;
+    background-position-y: 5%;
+}
+
+header a {
+  text-decoration: none;
+  color: #ccc;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
+.fixed-navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #353234;
+  height: 120px;
+  align-items: center;    
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+nav a:hover{
+  color:#fff ;
+}
+
+.wrapper{
+  margin:auto;
+  width: auto;
+  background-color: #fff;
+}
+
+.menu {
+  display: flex;
+  padding-left: 40px;
+  align-items: center;
+}
+
+.menu a{
+  margin-left: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+/* DROPDOWN */
+/* TICKET */
+
+.ticket {
+  display: inline-block;
+  position: relative;
+}
+
+.ticket a {
+  display: flex;
+  align-items: center;
+}
+
+.dropTicket {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px 5px 0px;
+  width: 110px;
+  transform: scaleY(0);
+  transition: transform 200ms;
+  transform-origin: top;
+  margin-left: 20px;
+}
+
+.ticket:hover .dropTicket {
+  transform: scaleY(1);
+  display: flex;
+  flex-direction: column;
+}
+
+.dropTicket a {
+  line-height: 20px;
+  display: block;
+  margin: 3px;
+  color: #313131;
+  padding: 0 5px;
+  position: relative;
+}
+
+.dropTicket a:hover{
+  color: #000;
+  background-color: rgb(221, 253, 248);
+}
+
+/* PROMOTION */
+
+.promotion {
+  display: inline-block;
+  position: relative;
+}
+
+.promotion a {
+  display: flex;
+  align-items: center;
+}
+
+.dropPromotion {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px 5px 0px;
+  width: 110px;
+  transform: scaleY(0);
+  transition: transform 200ms;
+  transform-origin: top;
+  margin-left: 30px;
+}
+
+.promotion:hover .dropPromotion {
+  transform: scaleY(1);
+  display: flex;
+  flex-direction: column;
+}
+
+.dropPromotion a {
+  line-height: 20px;
+  display: block;
+  margin: 3px;
+  color: #313131;
+  padding: 0 5px;
+  position: relative;
+}
+
+.dropPromotion a:hover{
+  color: #000;
+  background-color: rgb(221, 253, 248);
+}
+
+/*-----------*/
+
+.extra {
+  margin-right: 30px;
+}
+
+.extra a {
+  border: 2px solid #cbc;
+  border-radius: 20px;
+}
+/* CONTENT */
+
+.content-main{
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.Title{
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 125px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/Background\ ticket.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position-y: 100%;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.sub-title{
+  font-size: 30px;
+}
+
+.Content-Card-Start-ID1{
+ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/91EvqSUxbSL.jpg);
+ background-size: cover;
+ background-position-y: 35% ;
+ border-radius: 16px;
+ width: fit-content;
+ height: auto;
+ padding: 30px;
+ color: white;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ transition: 0.5s ease;
+ cursor: pointer;
+}
+
+.Content-Card-Start-ID1:hover{
+  background-position-y: 65% ;
+  transform: scale(1.03);
+}
+
+
+
+.Card-img-header-imgh1{
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.11);
+  border-radius: 14px;
+  margin-bottom: 10px;
+  outline: 1px solid white;
+  transition: 0.5s ease;
+  color: white;
+}
+
+.date{
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tanggal{
+  flex-direction: row-reverse;
+  background-color: rgb(0, 80, 133);
+  font-family:'Poppins';
+  color: white;
+  /* outline: solid 1px white; */
+  font-weight: bold;
+  width: fit-content;
+  padding: 10px 7px 10px 7px;
+  border-radius: 14px;
+  transition: 0.5s ease;
+}
+
+.waktu{
+  flex-direction: row-reverse;
+  background-color: rgb(0, 80, 133);
+  font-family:'Poppins';
+  color: white;
+  /* outline: solid 1px white; */
+  font-weight: bold;
+  width: fit-content;
+  padding: 10px 7px 10px 7px;
+  border-radius: 14px;
+  transition: 0.5s ease;
+}
+
+.CC{
+  display: flex;
+  margin: 10px 50px 10px 50px;
+  gap: 30px;
+}
+
+.CC a{
+  text-decoration: none;
+  /* color: white; */
+}
+
+.Content-Card-Start-ID1 p {
+  background-color: rgba(255, 255, 255, 0.11);
+  outline: 1px solid white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 12px;
+  transition: 0.5s ease;
+}
+
+.Content-Card-Start-ID1 a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* .button{
+  display: flex;
+  justify-content: center;
+  border-radius: 19px;
+    outline: solid 2px #ffd15c;
+    padding: 2px;
+    background-color:#ff7058;
+    transition: ease-in-out .2s;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+.button:hover{
+  transform: scale(1.03);
+} */
+
+
+/* Coldplayy */
+
+.Content-Card-Start-ID2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/onesheet.jpg);
+  background-size: cover;
+  background-position-y: 70% ;
+  border-radius: 16px;
+  width: fit-content;
+  height: auto;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.Content-Card-Start-ID2 p {
+  background-color: rgba(255, 255, 255, 0.11);
+  outline: 1px solid white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 12px;
+  transition: 0.5s ease;
+}
+
+.Content-Card-Start-ID2:hover{
+  background-position-y: 50% ;
+  transform: scale(1.03);
+}
+
+.Content-Card-Start-ID3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/Ald.png);
+  background-size: cover;
+  background-position-y: 70% ;
+  border-radius: 16px;
+  width: fit-content;
+  height: auto;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.Content-Card-Start-ID3 p {
+  background-color: rgba(255, 255, 255, 0.11);
+  outline: 1px solid white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 12px;
+  transition: 0.5s ease;
+}
+
+.Content-Card-Start-ID3:hover{
+  background-position-y: 20% ;
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #313131;
+  color: white;
+}
+
+.footer1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.footer-logo img{
+  width: 100px;
+}
+
+.sosmed img{
+  width: 20px;
+  height: 20px;
+}
+
+.sosmed{
+  display: flex;
+  gap: 10px;
+}
+
+.footer2{
+  margin-left: 60px;
+}
+
+.contactAtas{
+  display: flex;
+  align-items: center;
+}
+
+.contactBawah{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contactAtas h4{
+  margin-right: 30px;
+}
+
+.contactBawah p{
+  margin-bottom: 0px;
+}
+
+.conIsi1{
+  margin-top: 0px;
+}
+
+.downloadBawah img{
+  width: 120px;
+}
+
+.footer3{
+  margin-left: 70px;
+} 
+  
+
+@media screen and (max-width: 800px) {
+
+  /* HEADER */
+  .menu {
+    display: flex;
+      padding-left: 0;
+      justify-content: center;
+      flex-direction: column;
+    }
+  .nav{
+    justify-content: center;
+  }  
+    
+    .menu a {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .extra {
+      margin-right: 0;
+      margin-top: 20px;
+      
+    }
+
+    .fixed-navbar{
+      flex-direction: column;
+      height: fit-content;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      align-items: center;
+      position: relative;
+    }
+    .dropTicket{
+      margin-left: -10px;
+      padding-right: 5px;
+      z-index: 99999;
+      text-align: center;
+      
+    }
+
+    .dropPromotion{
+     margin-left: 5px;
+     padding-right: 10px;
+    }
+
+    .dropTicket a{
+      justify-content:center ;
+      z-index: 9999;
+    }
+
+    .dropPromotion a{
+      text-align: center;
+      
+    }
+
+    header{
+      height: fit-content;
+    }
+/* Content */
+
+.content-main{
+  margin-top: 0px;
+}
+
+.CC{
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer1{
+        margin-top: 10px;
+    }
+  }

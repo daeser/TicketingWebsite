@@ -1,0 +1,481 @@
+body {
+    margin: 0;
+    font-family: 'Instrument Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.fixed-navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #353234;
+    height: 120px;
+    align-items: center;    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+a:hover{
+    color:#fff ;
+}
+
+.wrapper{
+    margin:auto;
+    width: auto;
+    background-color: #fff;
+    padding-top: 120px;
+}
+
+.menu {
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+}
+
+.menu a{
+    margin-left: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+/* DROPDOWN */
+/* TICKET */
+
+.ticket {
+    display: inline-block;
+    position: relative;
+}
+
+.ticket a {
+    display: flex;
+    align-items: center;
+}
+
+.dropTicket {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px 5px 0px;
+    width: 110px;
+    transform: scaleY(0);
+    transition: transform 200ms;
+    transform-origin: top;
+    margin-left: 20px;
+}
+
+.ticket:hover .dropTicket {
+    transform: scaleY(1);
+    display: flex;
+    flex-direction: column;
+}
+
+.dropTicket a {
+    line-height: 20px;
+    display: block;
+    margin: 3px;
+    color: #313131;
+    padding: 0 5px;
+    position: relative;
+}
+
+.dropTicket a:hover{
+    color: #000;
+    background-color: rgb(221, 253, 248);
+}
+
+/* PROMOTION */
+
+.promotion {
+    display: inline-block;
+    position: relative;
+}
+
+.promotion a {
+    display: flex;
+    align-items: center;
+}
+
+.dropPromotion {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px 5px 0px;
+    width: 110px;
+    transform: scaleY(0);
+    transition: transform 200ms;
+    transform-origin: top;
+    margin-left: 30px;
+}
+
+.promotion:hover .dropPromotion {
+    transform: scaleY(1);
+    display: flex;
+    flex-direction: column;
+}
+
+.dropPromotion a {
+    line-height: 20px;
+    display: block;
+    margin: 3px;
+    color: #313131;
+    padding: 0 5px;
+    position: relative;
+}
+
+.dropPromotion a:hover{
+    color: #000;
+    background-color: rgb(221, 253, 248);
+}
+
+/*-----------*/
+
+.extra {
+    margin-right: 30px;
+}
+
+.extra a {
+    border: 2px solid #cbc;
+    border-radius: 20px;
+}
+
+/* CONTENT */
+.wrapper{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contentAtas{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contentTengah1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contentTengah1 img{
+    width: 360px;
+}
+
+.contentTengah2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contentTengah2 img{
+    width: 360px;
+}
+
+/* Promo2 ges */
+
+.promo1{
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    align-items: center;
+    transition: transform 0.5s ease;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.promo1judul{
+    display: flex;
+    margin-left: 20px;
+}
+
+.promo1isi{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+}
+
+.abu{
+    color: #8d8d8d;
+    margin-bottom: 0px;
+}
+
+.tanggal{
+    margin-top: 0px;
+}
+
+.buyOpt h3{
+    background-color: #acacac;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 0px;
+}
+
+/*  */
+
+.promo2{
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    align-items: center;
+    transition: transform 0.5s ease;
+    margin-bottom: 20px;
+}
+
+.promo2judul{
+    display: flex;
+    margin-left: 20px;
+}
+
+.promo2isi{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+}
+
+.abu{
+    color: #8d8d8d;
+    margin-bottom: 0px;
+}
+
+.tanggal{
+    margin-top: 0px;
+}
+
+.buyOpt h3{
+    background-color: #acacac;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+/*  */
+
+.promo3{
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    align-items: center;
+    transition: transform 0.5s ease;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+.promo3judul{
+    display: flex;
+    margin-left: 20px;
+}
+
+.promo3isi{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+}
+
+.abu{
+    color: #8d8d8d;
+    margin-bottom: 0px;
+}
+
+.tanggal{
+    margin-top: 0px;
+}
+
+.buyOpt h3{
+    background-color: #ff9500;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 0px;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #313131;
+    color: white;
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.footer-logo img{
+    width: 100px;
+}
+
+.sosmed img{
+    width: 20px;
+    height: 20px;
+}
+
+.sosmed{
+    display: flex;
+    gap: 10px;
+}
+
+.footer2{
+    margin-left: 60px;
+}
+
+.contactAtas{
+    display: flex;
+    align-items: center;
+}
+
+.contactBawah{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contactAtas h4{
+    margin-right: 30px;
+}
+
+.contactBawah p{
+    margin-bottom: 0px;
+}
+
+.conIsi1{
+    margin-top: 0px;
+}
+
+.downloadBawah img{
+    width: 120px;
+}
+
+.footer3{
+    margin-left: 70px;
+}
+.promo1,.promo2{
+    transition: .1s ease-in-out;
+}
+.promo1:hover,.promo2:hover{
+    scale: 1.1;
+}
+
+.contentTengah1{
+margin-bottom: 30px;
+}
+.showmore{
+    color: white;
+    background-color: #313131;
+    font-size: 18px;
+    border-radius:20px ;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.showmore:hover{
+    background-color: #5f5f5f;
+}
+
+.buyOpt h3:hover{
+    background-color: #f6b04f;
+
+}
+
+/* hide */
+#hide{
+    display: none;  
+  }
+
+  #hide2{
+    display: none;  
+  }
+
+
+
+  @media screen and (max-width: 800px){
+
+     /* HEADER */
+     .menu {
+        padding-left: 0;
+        justify-content: center;
+        flex-direction: column;
+      }
+      
+      .menu a {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      
+      .extra {
+        margin-right: 0;
+        margin-top: 20px;
+        
+      }
+
+      .fixed-navbar{
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        position: relative;
+      }
+      .dropTicket{
+        margin-left: -10px;
+        padding-right: 5px;
+        z-index: 99999;
+        text-align: center;
+        
+      }
+
+      .dropPromotion{
+       margin-left: 5px;
+       padding-right: 10px;
+      }
+
+      .dropTicket a{
+        justify-content:center ;
+        z-index: 9999;
+      }
+
+      .dropPromotion a{
+        text-align: center;
+        
+      }
+
+      header{
+        height: fit-content;
+      }
+/*  */
+      .wrapper{
+        padding-top: 20px;
+      }
+    .contentTengah1{
+        flex-direction: column;
+    }
+
+    .promo1{
+        margin-right: 0px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+
+  }

@@ -1,0 +1,581 @@
+section {
+    padding: 100px 0;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  
+  h1 {
+    font-size: 200%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: #bdbdbd;
+    background-image: url(img/backgroundJKT.jpeg);
+    background-size: cover;
+    background-position-y: 5%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccc;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #353234;
+    height: 120px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav a:hover{
+    color:#fff ;
+}
+
+.wrapper{
+    margin: auto;
+    width: auto;
+    background-color: #fff;
+}
+
+.menu {
+    display: flex;
+    padding-left: 40px;
+    align-items: center;
+}
+
+.menu a{
+    margin-left: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+/* DROPDOWN */
+/* TICKET */
+
+.ticket {
+    display: inline-block;
+    position: relative;
+}
+
+.ticket a {
+    display: flex;
+    align-items: center;
+}
+
+.dropTicket {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px 5px 0px;
+    width: 110px;
+    transform: scaleY(0);
+    transition: transform 200ms;
+    transform-origin: top;
+    margin-left: 20px;
+}
+
+.ticket:hover .dropTicket {
+    transform: scaleY(1);
+    display: flex;
+    flex-direction: column;
+}
+
+.dropTicket a {
+    line-height: 20px;
+    display: block;
+    margin: 3px;
+    color: #313131;
+    padding: 0 5px;
+    position: relative;
+}
+
+.dropTicket a:hover{
+    color: #000;
+    background-color: rgb(221, 253, 248);
+}
+
+.promotion {
+    display: inline-block;
+    position: relative;
+}
+
+.promotion a {
+    display: flex;
+    align-items: center;
+}
+
+.dropPromotion {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px 5px 0px;
+    width: 110px;
+    transform: scaleY(0);
+    transition: transform 200ms;
+    transform-origin: top;
+    margin-left: 30px;
+}
+
+.promotion:hover .dropPromotion {
+    transform: scaleY(1);
+    display: flex;
+    flex-direction: column;
+}
+
+.dropPromotion a {
+    line-height: 20px;
+    display: block;
+    margin: 3px;
+    color: #313131;
+    padding: 0 5px;
+    position: relative;
+}
+
+.dropPromotion a:hover{
+    color: #000;
+    background-color: rgb(221, 253, 248);
+}
+/* EXTRA */
+.extra {
+    margin-right: 30px;
+}
+
+.extra a {
+    border: 2px solid #cbc;
+    border-radius: 20px;
+}
+
+/* s */
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.main {
+    background-color: rgb(247, 250, 255);
+    width: 1100px;
+    margin: 20px;
+    margin-top: 160px;
+    padding: 10px 0px 30px 0px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.judulkonser{
+    color: white;
+    width: 494px;
+}
+
+.gambar{
+    display: flex;
+    justify-content: center;
+}
+
+.main img{
+    width: 340px;
+    height: auto;
+    /* margin-bottom: 20px; */
+    border-radius: 16px;
+}
+
+.main ol{
+    text-align: justify;
+}
+
+.main p{
+    text-align: justify;
+}
+
+.desc1 {
+    padding-left: 30px;
+    padding-right: 30px;
+    
+}
+
+.desc1 h1{
+    margin-bottom: 0px;
+}
+.author {
+    font-style: italic;
+    margin-bottom: 20px;
+    /* color: #888; */
+  }
+
+.balik{
+margin-left: 10px;
+margin-bottom: 30px;
+} 
+
+.balik a{
+    text-decoration: none;
+    border-radius: 19px;
+    outline: solid 2px #ffd15c;
+    padding: 7px 15px;
+    color: white;
+    background-color:#ff7058;
+    transition: ease-in-out .2s;
+
+}
+
+.lokasikonser{
+    color: white;
+}
+
+.lokasi{
+    margin-bottom: 0px;
+    text-decoration: underline;
+    color: white;
+}
+
+.waktu{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: underline;
+    color: white;
+}
+
+.flexwaktu{
+    display: flex;
+    gap: 140px;
+}
+
+.harga{
+    margin: 0px;
+    margin-top: 5px;
+    background-color: azure;
+    padding: 0px 10px 0px 10px;
+    border-radius: 4px;
+    outline: solid 1px black;
+    font-weight:normal;
+    font-size: 18px;
+}
+
+.kapan{
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 5px;
+    background-color: rgb(0, 80, 133);
+    width: fit-content;
+    padding: 0px 10px 0px 10px;
+    border-radius: 4px;
+    margin-bottom: 15%;
+    outline: solid 1px black;
+    color: white;
+}
+
+.buyticket a{
+    margin-top: 0px;
+    text-decoration: none;
+    color: white;
+    background-color: #F71568;
+    font-weight: bold;
+    font-family: "Poppins";
+    padding: 10px 15px 10px 15px;
+    border-radius: 12px;
+    outline: 1px solid black;
+    transition: 0.2s ease;
+}
+
+.buyticket a:hover{
+    background-color:#ee5f94;
+}
+
+.alamat{
+    margin-top: 0px;
+    width: 494px;
+}
+.date{
+    margin-top: 0px;
+    background-color: azure;
+    padding: 0px 10px 0px 10px;
+    width: fit-content;
+    outline: solid 1px black;
+    border-radius: 4px;
+    margin-bottom: 3px;
+}
+
+.ribbon{
+    margin: 0px 0px 7px 0px;
+    background-color: red;
+    font-weight: bolder;
+    color: white;
+    padding: 7px 5px 7px 5px;
+    border-radius: 8px;
+}
+
+
+
+.date-ribbon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+}
+#timer{
+    margin-left:12px ;
+}
+
+.cardatas{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    justify-content: center;
+    background-color:#363636;
+    /* border-radius: 16px; */
+}
+
+.kanancard{
+    margin-left: 30px;
+    
+}
+
+.balik a:hover{
+    background-color: #2763a7;
+}
+
+.noah-back{
+    background-image: url(img/ariel.jpg);
+}
+
+.id-back{
+    background-image: url(img/IDBACK.jpg);
+}
+
+.cp-back{
+    background-image: url(img/cpback.jpg);
+}
+
+.ald-back{
+    background-image: url(img/aldiaaa.jpg);
+    background-position-x:100% ;
+}
+
+.ribbon-timer{
+    
+        margin: 0px 0px 7px 0px;
+        background-color: red;
+        font-weight: bolder;
+        color: white;
+        padding: 5px 3px 5px 3px;
+        border-radius: 8px;
+    
+}
+
+#ongoing-timeleft{
+    gap: 210px;
+}
+
+#tulisan-ongoing{
+    gap: 12px;
+}
+
+.textribbontop{
+    display: flex;
+    gap: 220px;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #313131;
+    color: white;
+}
+
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.footer-logo img{
+    width: 100px;
+}
+
+.sosmed img{
+    width: 20px;
+    height: 20px;
+}
+
+.sosmed{
+    display: flex;
+    gap: 10px;
+}
+
+.footer2{
+    margin-left: 60px;
+}
+
+.contactAtas{
+    display: flex;
+    align-items: center;
+}
+
+.contactBawah{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contactAtas h4{
+    margin-right: 30px;
+}
+
+.contactBawah p{
+    margin-bottom: 0px;
+}
+
+.conIsi1{
+    margin-top: 0px;
+}
+
+.downloadBawah img{
+    width: 120px;
+}
+
+.footer3{
+    margin-left: 70px;
+} 
+
+@media screen and (max-width: 800px) {
+
+    /* HEADER */
+    .menu {
+      display: flex;
+        padding-left: 0;
+        justify-content: center;
+        flex-direction: column;
+      }
+    .nav{
+      justify-content: center;
+    }  
+      
+      .menu a {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      
+      .extra {
+        margin-right: 0;
+        margin-top: 20px;
+        
+      }
+  
+      .fixed-navbar{
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        align-items: center;
+        position: relative;
+      }
+      .dropTicket{
+        margin-left: -10px;
+        padding-right: 5px;
+        z-index: 99999;
+        text-align: center;
+        
+      }
+  
+      .dropPromotion{
+       margin-left: 5px;
+       padding-right: 10px;
+      }
+  
+      .dropTicket a{
+        justify-content:center ;
+        z-index: 9999;
+      }
+  
+      .dropPromotion a{
+        text-align: center;
+        
+      }
+  
+      header{
+        height: fit-content;
+      }
+
+      /* bODY */
+.main{
+    width: auto;
+    margin-top: 20px;
+  }
+
+ .cardatas{
+    flex-direction: column;
+    padding-bottom: 40px;
+ } 
+
+ .judulkonser{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    width: auto;
+ }
+
+ .judulkonser h1{
+    font-size: 30px;
+}
+
+.alamat{
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.lokasi{
+    margin-top: 2px;
+}
+
+.flexwaktu{
+    gap:150px;
+}
+
+.date-ribbon{
+    gap:30px
+}
+
+
+  /*  */
+      footer{
+          display: flex;
+          flex-direction: column;
+      }
+  
+      .footer1{
+          margin-top: 10px;
+      }
+    }

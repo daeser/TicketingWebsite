@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap" rel="stylesheet">
+    <title>Ticks Register Page</title>
+    <link rel="icon" href="img\432312.png" type="icon">
+    <link rel="stylesheet" href="register-style.css">
+</head>
+
+<body>
+    <div class="wrapper"> <!-- ini nge wrap seluruh body dari header ke footer-->
+        <!-- HEADER -->
+        <header>
+            <a href="index.html"><img src="img\432312.png" alt=""></a>
+        </header>
+
+        <main>
+            <div class="content">
+                <div class="container">
+                    <div class="left">
+                        <img src="img\AppLocker-Permission.svg" alt="" class="ilus">
+                    </div>
+    
+                    <div class="right">
+                        <form>
+                            <p> Welcome to TICKS</p>
+                            <h4>Find Your Perfect Concert! </h4>
+                            
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" ><br><br>
+                
+                            <label for="password">Password:</label><br>
+                            <input type="password" id="password" name="password" ><br><br>
+                
+                            <label for="phone">Phone Number:</label><br>
+                            <input type="text" id="phone" name="phone" ><br><br>
+                
+                            <label>Gender:</label><br>
+                            <input type="radio" id="male" name="gender" value="male" >
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female" >
+                            <label for="female">Female</label>
+                            <br>
+                
+                            <input type="checkbox" id="terms" name="terms" >
+                            <label for="terms">I agree to the terms and conditions</label><br><br>
+                
+                            <input type="button" value="Submit" onclick="validateData()"> <br>
+                            <br>
+                            <span id="error-msg"></span>
+                        </form>
+                    </div>
+    
+                </div>
+            </div>
+           
+           
+        
+        </main>
+    </div>
+    
+    
+    <script src="register-script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,502 @@
+section {
+  padding: 100px 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+
+h1 {
+  font-size: 200%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  background-color:  #3F4E4F;
+
+  /* background-image: url(img/AS.jpg); */
+  background-size: cover;
+  background-position-y: 5%;
+}
+
+header a {
+text-decoration: none;
+color: #ccc;
+margin: 5px;
+padding: 5px 10px;
+font-size: 20px;
+}
+
+.fixed-navbar {
+display: flex;
+justify-content: space-between;
+background-color: #353234;
+height: 120px;
+align-items: center;    
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 9999;
+}
+
+nav a:hover{
+color:#fff ;
+}
+
+.wrapper{
+margin:auto;
+width: auto;
+background-color: #fff;
+}
+
+.menu {
+display: flex;
+padding-left: 40px;
+align-items: center;
+}
+
+.menu a{
+margin-left: 20px;
+}
+
+.logo {
+width: 100px;
+}
+
+/* DROPDOWN */
+/* TICKET */
+
+.ticket {
+display: inline-block;
+position: relative;
+}
+
+.ticket a {
+display: flex;
+align-items: center;
+}
+
+.dropTicket {
+position: absolute;
+background-color: #fff;
+border-radius: 5px 5px 0px;
+width: 110px;
+transform: scaleY(0);
+transition: transform 200ms;
+transform-origin: top;
+margin-left: 20px;
+}
+
+.ticket:hover .dropTicket {
+transform: scaleY(1);
+display: flex;
+flex-direction: column;
+}
+
+.dropTicket a {
+line-height: 20px;
+display: block;
+margin: 3px;
+color: #313131;
+padding: 0 5px;
+position: relative;
+}
+
+.dropTicket a:hover{
+color: #000;
+background-color: rgb(221, 253, 248);
+}
+
+/* PROMOTION */
+
+.promotion {
+display: inline-block;
+position: relative;
+}
+
+.promotion a {
+display: flex;
+align-items: center;
+}
+
+.dropPromotion {
+position: absolute;
+background-color: #fff;
+border-radius: 5px 5px 0px;
+width: 110px;
+transform: scaleY(0);
+transition: transform 200ms;
+transform-origin: top;
+margin-left: 30px;
+}
+
+.promotion:hover .dropPromotion {
+transform: scaleY(1);
+display: flex;
+flex-direction: column;
+}
+
+.dropPromotion a {
+line-height: 20px;
+display: block;
+margin: 3px;
+color: #313131;
+padding: 0 5px;
+position: relative;
+}
+
+.dropPromotion a:hover{
+color: #000;
+background-color: rgb(221, 253, 248);
+}
+
+/*-----------*/
+
+.extra {
+margin-right: 30px;
+}
+
+.extra a {
+border: 2px solid #cbc;
+border-radius: 20px;
+}
+/* CONTENT */
+
+.content-main{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.Title{
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 125px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/ongoing.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position-y: 50%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .wrapper{
+    margin: auto;
+    width: auto;
+    background-color: #fff;
+}
+  
+  .sub-title{
+    font-size: 30px;
+  }
+
+  .card-con{
+    display: flex;
+     gap: 70px;
+     margin: 10px 150px;
+     padding: 20px 20px;
+     background-color: #f3f3f3;
+     border-radius: 20px;
+  }
+
+  .card {
+    background-color: #363636;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px 20px 20px 20px;
+    width: 50%;
+    height: auto;
+    margin: 10px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.cardc{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+
+.title2{
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(255, 83, 83);
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: #646464;
+}
+
+.card img {
+    max-width: 34%;
+    height: 225px;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    /* outline: solid 1px black; */
+}
+
+
+.card p{
+    color: #666;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.card .desc {
+    color: #ffffff;
+    line-height: 1.5;
+    text-align: justify;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    
+    background-color: rgba(255, 255, 255, 0.11);
+    outline: 1px solid white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 12px;
+    transition: 0.5s ease;
+}
+
+
+.card h2{
+    margin-top: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+
+.date{
+    /* text-decoration:underline; */
+    margin-top: 5px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 40px;
+    width: max-content;
+margin-bottom: 20px;
+
+}
+
+
+
+.tanggal{
+    flex-direction: row-reverse;
+    background-color: rgb(0, 80, 133);
+    font-family:'Poppins';
+    color: white;
+    /* outline: solid 1px white; */
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px 7px 10px 7px;
+    border-radius: 14px;
+    transition: 0.5s ease;
+  }
+  
+  .waktu{
+    flex-direction: row-reverse;
+    background-color: rgb(0, 80, 133);
+    font-family:'Poppins';
+    color: white;
+    /* outline: solid 1px white; */
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px 7px 10px 7px;
+    border-radius: 14px;
+    transition: 0.5s ease;
+  }
+
+.card a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #313131;
+  color: white;
+}
+
+.footer1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.footer-logo img{
+  width: 100px;
+}
+
+.sosmed img{
+  width: 20px;
+  height: 20px;
+}
+
+.sosmed{
+  display: flex;
+  gap: 10px;
+}
+
+.footer2{
+  margin-left: 60px;
+}
+
+.contactAtas{
+  display: flex;
+  align-items: center;
+}
+
+.contactBawah{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.contactAtas h4{
+  margin-right: 30px;
+}
+
+.contactBawah p{
+  margin-bottom: 0px;
+}
+
+.conIsi1{
+  margin-top: 0px;
+}
+
+.downloadBawah img{
+  width: 120px;
+}
+
+.footer3{
+  margin-left: 70px;
+} 
+   
+@media screen and (max-width: 800px) {
+
+  /* HEADER */
+  .menu {
+    display: flex;
+      padding-left: 0;
+      justify-content: center;
+      flex-direction: column;
+    }
+  .nav{
+    justify-content: center;
+  }  
+    
+    .menu a {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .extra {
+      margin-right: 0;
+      margin-top: 20px;
+      
+    }
+
+    .fixed-navbar{
+      flex-direction: column;
+      height: fit-content;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      align-items: center;
+      position: relative;
+    }
+    .dropTicket{
+      margin-left: -10px;
+      padding-right: 5px;
+      z-index: 99999;
+      text-align: center;
+      
+    }
+
+    .dropPromotion{
+     margin-left: 5px;
+     padding-right: 10px;
+    }
+
+    .dropTicket a{
+      justify-content:center ;
+      z-index: 9999;
+    }
+
+    .dropPromotion a{
+      text-align: center;
+      
+    }
+
+    header{
+      height: fit-content;
+    }
+    /* Content */
+.content-main{
+  margin-top: 0px;
+}
+
+.card img{
+  height: 150px;
+}
+
+.card-con{
+  flex-direction: column;
+}
+
+.card{
+  width: fit-content;
+}
+
+.card .desc{
+  font-size: 14px;
+}
+
+.card-con {
+  gap: 0px;
+}
+
+
+/*Footer*/
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer1{
+        margin-top: 10px;
+    }
+  }

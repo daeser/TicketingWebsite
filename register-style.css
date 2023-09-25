@@ -1,0 +1,149 @@
+
+body {
+    margin: 0;
+    font-family: 'Instrument Sans', sans-serif;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: #ccc;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+header img{
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+/* main */
+main{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container{
+    display: flex;
+    width: 1100px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+.left{
+    background-color: #FF7058;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+
+.right{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    /* background-color: #F6F7EB; */
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.ilus{
+    width: 450px;
+}
+
+form P{
+    color: #FF7058;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  input[type="password"] {
+    width: 300px;
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  input[type="radio"]{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transform: scale(1.2);
+  }
+  
+
+  input[type="button"]{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #FF7058;
+    font-size: 18px;
+    font-family: 'Instrument Sans', sans-serif;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+  }
+
+  input[type="button"]:hover{
+    transform: scale(1.1);
+  }
+
+
+  @media screen and (max-width: 800px){
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    header img{
+      margin: 0;
+    }
+   
+
+    .container{
+      display: flex;
+      flex-direction: column-reverse;
+      width: fit-content;
+      height: fit-content;
+      
+    }
+    .right{
+      width: 500px;
+      padding: 30px;
+      margin: 0px;
+      border-radius: 20px 20px 0px 0px;
+    }
+
+    .left{
+      width: 500px;
+      padding: 30px;
+      margin: 0px;
+      height: 300px;
+      border-radius: 0px 0px 20px 20px;
+    }
+
+    .left img{
+      width: 300px;
+    }
+
+    main{
+      margin-top: 200px;
+    }
+  }
